@@ -31,7 +31,7 @@ public class EmergencyContactEdit extends AppCompatActivity {
                 String emailString = emailEditText.getText().toString();
                 String phoneString = phoneEditText.getText().toString();
 
-                Intent intent = new Intent(EmergencyContactEdit.this, EmergencyContact.class);
+                Intent intent = new Intent(EmergencyContactEdit.this, SendSMS.class);
                 intent.putExtra("NAME", nameString);
                 intent.putExtra("EMAIL", emailString);
                 intent.putExtra("PHONE", phoneString);
